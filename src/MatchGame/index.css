@@ -1,6 +1,6 @@
 .bg-con {
   background-image: url(https://assets.ccbp.in/frontend/react-js/match-game-bg.png);
-
+  min-height: 100vh;
   background-size: cover;
 }
 
@@ -56,4 +56,19 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.game-over-con {
+  background-image: url(https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png);
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trophy {
+  width: 200px;
 }
