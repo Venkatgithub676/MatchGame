@@ -10,17 +10,21 @@ const Navbar = props => {
         alt="website logo"
         className="website-logo"
       />
-      <div className="score-timer-sec-con">
-        <p className="score">Score: {score}</p>
-        <div className="timer-sec-con">
+      <ul className="score-timer-sec-con">
+        <li>
+          <p className="score">
+            Score: <span className="score-span">{score}</span>
+          </p>
+        </li>
+        <li className="timer-sec-con">
           <img
             alt="timer"
             src="https://assets.ccbp.in/frontend/react-js/match-game-timer-img.png"
             className="timer"
           />
           <p className="timer-secs">{time} sec</p>
-        </div>
-      </div>
+        </li>
+      </ul>
     </nav>
   )
 }
